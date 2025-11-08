@@ -1,0 +1,8 @@
+name: 'AEM Demo'
+type: theme
+description: 'Simple AEM-style banner theme for Drupal Simple.'
+core_version_requirement: ^10
+base theme: olivero
+
+libraries:
+  - aem_demo/global-styling
