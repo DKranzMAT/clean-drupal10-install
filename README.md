@@ -2,11 +2,12 @@
 
 A lightweight, interview-ready Drupal 10 demo based on the **Drupal Simple** starter, with a custom front-end theme inspired by **Feeding America’s** branding and storytelling patterns.
 
-This repo shows how to:
+This project demonstrates how to:
 
-- Spin up a simple Drupal 10 site locally.
-- Add a custom theme on top of Olivero.
-- Present a focused, one-page “nonprofit landing” experience that feels real but is easy to reason about in an interview.
+- Set up and configure a full Drupal 10 environment from scratch using Composer, Drush, and local development tools — ensuring a clean, reproducible install.
+- Build a custom front-end theme (fa_demo) extending Drupal’s core theme layer with a new .info.yml, .libraries.yml, and page.html.twig template structure.
+- Integrate modern design tokens and CSS variables (--fa-green, --fa-orange, --fa-cream, etc.) to match an external brand identity while keeping styles maintainable and modular.
+- Replaces the default Olivero layout
 
 > This is **not** an official Feeding America project. Branding is used purely for demonstration.
 
