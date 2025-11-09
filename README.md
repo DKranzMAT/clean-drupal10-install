@@ -1,6 +1,6 @@
 # FA Demo — Drupal 10 × Component-led UX
 
-A lightweight, interview-ready Drupal 10 demo based on the **Drupal Simple** starter, with a custom front-end theme inspired by **Feeding America’s** branding and storytelling patterns.
+A lightweight, interview-ready Drupal 10 demo with a custom front-end theme inspired by **Feeding America’s** branding and storytelling patterns.
 
 This project demonstrates how to:
 
@@ -88,8 +88,7 @@ Key files:
 ---
 
 ## Notes
-
-- Intentionally small and readable for interviews: single page + theme only.  
+  
 - Easily extendable: add blocks, views, or content types as needed.
 
 ---
