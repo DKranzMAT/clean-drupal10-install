@@ -1,0 +1,88 @@
+{#
+  FA Demo page template
+  - No @olivero extends
+  - Renders header/footer via standard page regions
+  - Adds custom Feeding America–style hero + sections above main content
+#}
+
+<div class="layout-container">
+
+  {# Existing header / menus / branding from blocks #}
+  {% if page.header %}
+    <header role="banner" class="site-header">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  <main role="main" class="fa-main">
+
+    {# HERO: FA-inspired messaging #}
+    <section class="fa-hero">
+      <div class="fa-hero-inner">
+        <h1 class="fa-hero-title">Drupal 10 × Component-led UX</h1>
+        <p class="fa-hero-subtitle">
+          A clean, modular one-pager that reimagines nonprofit storytelling and impact metrics.
+        </p>
+        <div class="fa-hero-actions">
+          <a href="#ways-to-help" class="fa-btn fa-btn-primary">Get involved</a>
+          <a href="#impact" class="fa-btn fa-btn-ghost">See impact stories</a>
+        </div>
+      </div>
+    </section>
+
+    {# IMPACT STRIP: simple static stats (replace with real data later) #}
+    <section id="impact" class="fa-impact-strip">
+      <div class="fa-impact-grid">
+        <div class="fa-impact-item">
+          <div class="fa-impact-label">Meals supported this month</div>
+          <div class="fa-impact-value">128,430</div>
+        </div>
+        <div class="fa-impact-item">
+          <div class="fa-impact-label">Local food bank partners</div>
+          <div class="fa-impact-value">210+</div>
+        </div>
+        <div class="fa-impact-item">
+          <div class="fa-impact-label">Volunteers engaged</div>
+          <div class="fa-impact-value">4,982</div>
+        </div>
+      </div>
+    </section>
+
+    {# WAYS TO HELP: three-column component #}
+    <section id="ways-to-help" class="fa-ways">
+      <div class="fa-ways-grid">
+        <article class="fa-way">
+          <h2 class="fa-way-title">Give</h2>
+          <p class="fa-way-text">
+            Show how a simple donation can help neighbors keep food on the table.
+          </p>
+        </article>
+        <article class="fa-way">
+          <h2 class="fa-way-title">Volunteer</h2>
+          <p class="fa-way-text">
+            Highlight shifts at local food banks, pantries, and events.
+          </p>
+        </article>
+        <article class="fa-way">
+          <h2 class="fa-way-title">Advocate</h2>
+          <p class="fa-way-text">
+            Point to stories and actions that protect hunger relief programs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    {# Default Drupal page content below our hero + sections #}
+    <section class="fa-default-content">
+      {{ page.content }}
+    </section>
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo" class="site-footer">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>

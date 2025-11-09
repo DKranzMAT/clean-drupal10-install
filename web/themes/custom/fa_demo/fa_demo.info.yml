@@ -1,0 +1,8 @@
+name: 'FA Demo'
+type: theme
+description: 'Feeding America style demo theme for Drupal Simple.'
+core_version_requirement: ^10
+base theme: olivero
+
+libraries:
+  - fa_demo/global-styling

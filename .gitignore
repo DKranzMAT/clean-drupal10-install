@@ -1,0 +1,10 @@
+
+# --- Drupal file/cache clutter ---
+web/sites/default/files/*
+!web/sites/default/files/.gitkeep
+
+# Vendor & build stuff (if not already ignored)
+vendor/
+web/core/
+web/modules/contrib/
+web/themes/contrib/

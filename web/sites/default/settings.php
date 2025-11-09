@@ -905,3 +905,10 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_K6ICTHrqRjgDqJ02lj9YK_X6c_alBUB0FkdytQFCJ5cqroB5YCTiooHRekhWpJt2WGG-AfdQgw/sync';
+
+$config['system.theme']['default'] = 'fa_demo';
+$config['system.theme']['admin'] = 'claro';
+
+
+
+

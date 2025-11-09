@@ -1,0 +1,214 @@
+/* web/themes/custom/fa_demo/css/style.css */
+
+:root {
+  --fa-green: #2e6e3b;
+  --fa-orange: #f7941d;
+  --fa-cream: #fff7ec;
+  --fa-sand: #f2e3cf;
+  --fa-text: #163018;
+}
+
+/* Set site-wide background to cream */
+body {
+  background-color: var(--fa-cream);
+  color: var(--fa-text);
+}
+
+/* Remove Olivero's drop pattern background */
+body {
+  background-color: var(--fa-cream);
+  background-image: none !important;
+}
+
+/* Just in case Olivero injects it via ::before pseudo-element */
+body::before {
+  background-image: none !important;
+  content: none !important;
+}
+
+/* Removes default theme options-content */
+.block__content {
+  display: none !important;
+}
+
+
+/* Hide the default Drupal/Olivero header area */
+.site-header {
+  display: none !important;
+}
+
+/* HERO */
+.fa-hero {
+  background: linear-gradient(120deg, var(--fa-green), var(--fa-orange));
+  color: #ffffff;
+  padding: 4rem 1.5rem 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid var(--fa-sand);
+}
+
+
+.fa-main {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.fa-hero-inner {
+  max-width: 720px;
+}
+
+.fa-hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem;
+}
+
+.fa-hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.fa-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.fa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.18s ease-in-out;
+}
+
+.fa-btn-primary {
+  background: var(--fa-orange);
+  color: #1b1b1b;
+}
+
+.fa-btn-primary:hover {
+  background: #ffa733;
+}
+
+.fa-btn-ghost {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.fa-btn-ghost:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* IMPACT STRIP */
+.fa-impact-strip {
+  background: var(--fa-cream);
+  padding: 2rem 1.5rem;
+}
+
+.fa-impact-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.fa-impact-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--fa-green);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.fa-impact-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--fa-text);
+}
+
+/* WAYS TO HELP */
+.fa-ways {
+  max-width: 1120px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: block;            /* <-- important: was grid */
+}
+
+.fa-ways h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--fa-green);
+}
+
+.fa-ways p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Align Give / Volunteer / Advocate horizontally */
+.fa-ways-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.fa-way {
+  flex: 1 1 30%;
+  background: var(--fa-cream);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.fa-way h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fa-way p {
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .fa-ways-grid {
+    flex-direction: column;
+  }
+
+  .fa-way {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+/* Remove Olivero blue header background */
+.site-header {
+  background: var(--fa-cream);
+  border-bottom: 1px solid #e3d6bd;
+}
+
+.site-name,
+.site-name a {
+  color: var(--fa-green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-name a:hover {
+  color: var(--fa-orange);
+}
+
