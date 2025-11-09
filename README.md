@@ -12,6 +12,11 @@ This repo shows how to:
 
 ---
 
+# FA Demo — Drupal 10 × Component-led UX
+![Drupal 10 Screenshot](Drupal10_screen.png)
+
+---
+
 ## What’s Included
 
 ### Custom theme: `fa_demo`
