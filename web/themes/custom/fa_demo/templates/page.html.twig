@@ -1,88 +1,57 @@
-{#
-  FA Demo page template
-  - No @olivero extends
-  - Renders header/footer via standard page regions
-  - Adds custom Feeding America–style hero + sections above main content
-#}
+<section class="hero">
+  <div class="hero__eyebrow">July 4, 2026</div>
+  <div class="hero__rule"></div>
+  <h1 class="hero__title">250 Years of<br><span>American Democracy</span></h1>
+  <p class="hero__subtitle">From the signing of the Declaration of Independence to a nation still becoming.</p>
+  <div class="hero__dates">1776 &nbsp;·&nbsp; 2026</div>
+  <div class="hero__ctas">
+    <a href="#pillars" class="btn-primary">Explore the Legacy</a>
+    <a href="#impact" class="btn-secondary">By the Numbers</a>
+  </div>
+</section>
 
-<div class="layout-container">
+<section class="impact-strip" id="impact">
+  <div class="impact-item">
+    <div class="impact-item__number">250</div>
+    <div class="impact-item__label">Years of Independence</div>
+  </div>
+  <div class="impact-item">
+    <div class="impact-item__number">50</div>
+    <div class="impact-item__label">United States</div>
+  </div>
+  <div class="impact-item">
+    <div class="impact-item__number">27</div>
+    <div class="impact-item__label">Constitutional Amendments</div>
+  </div>
+  <div class="impact-item">
+    <div class="impact-item__number">330M</div>
+    <div class="impact-item__label">Americans</div>
+  </div>
+</section>
 
-  {# Existing header / menus / branding from blocks #}
-  {% if page.header %}
-    <header role="banner" class="site-header">
-      {{ page.header }}
-    </header>
-  {% endif %}
+<section class="pillars" id="pillars">
+  <div class="pillars__heading">The Foundation</div>
+  <h2 class="pillars__title">Three Enduring Pillars</h2>
+  <div class="pillars__rule"></div>
+  <div class="pillars__grid">
+    <div class="pillar">
+      <div class="pillar__icon">⚖️</div>
+      <h3 class="pillar__title">Liberty</h3>
+      <p class="pillar__body">The promise that every person is endowed with unalienable rights — the cornerstone upon which this republic was built.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar__icon">🤝</div>
+      <h3 class="pillar__title">Unity</h3>
+      <p class="pillar__body">Thirteen colonies became fifty states. From many, one. The ongoing work of forging a more perfect union.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar__icon">🕯️</div>
+      <h3 class="pillar__title">Legacy</h3>
+      <p class="pillar__body">Two and a half centuries of courage, sacrifice, and progress — a story still being written by every generation.</p>
+    </div>
+  </div>
+</section>
 
-  <main role="main" class="fa-main">
-
-    {# HERO: FA-inspired messaging #}
-    <section class="fa-hero">
-      <div class="fa-hero-inner">
-        <h1 class="fa-hero-title">Drupal 10 × Component-led UX</h1>
-        <p class="fa-hero-subtitle">
-          A clean, modular one-pager that reimagines nonprofit storytelling and impact metrics.
-        </p>
-        <div class="fa-hero-actions">
-          <a href="#ways-to-help" class="fa-btn fa-btn-primary">Get involved</a>
-          <a href="#impact" class="fa-btn fa-btn-ghost">See impact stories</a>
-        </div>
-      </div>
-    </section>
-
-    {# IMPACT STRIP: simple static stats (replace with real data later) #}
-    <section id="impact" class="fa-impact-strip">
-      <div class="fa-impact-grid">
-        <div class="fa-impact-item">
-          <div class="fa-impact-label">Meals supported this month</div>
-          <div class="fa-impact-value">128,430</div>
-        </div>
-        <div class="fa-impact-item">
-          <div class="fa-impact-label">Local food bank partners</div>
-          <div class="fa-impact-value">210+</div>
-        </div>
-        <div class="fa-impact-item">
-          <div class="fa-impact-label">Volunteers engaged</div>
-          <div class="fa-impact-value">4,982</div>
-        </div>
-      </div>
-    </section>
-
-    {# WAYS TO HELP: three-column component #}
-    <section id="ways-to-help" class="fa-ways">
-      <div class="fa-ways-grid">
-        <article class="fa-way">
-          <h2 class="fa-way-title">Give</h2>
-          <p class="fa-way-text">
-            Show how a simple donation can help neighbors keep food on the table.
-          </p>
-        </article>
-        <article class="fa-way">
-          <h2 class="fa-way-title">Volunteer</h2>
-          <p class="fa-way-text">
-            Highlight shifts at local food banks, pantries, and events.
-          </p>
-        </article>
-        <article class="fa-way">
-          <h2 class="fa-way-title">Advocate</h2>
-          <p class="fa-way-text">
-            Point to stories and actions that protect hunger relief programs.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    {# Default Drupal page content below our hero + sections #}
-    <section class="fa-default-content">
-      {{ page.content }}
-    </section>
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo" class="site-footer">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>
+<footer class="site-footer">
+  America 250 &nbsp;·&nbsp; 1776 – 2026 &nbsp;·&nbsp; E Pluribus Unum
+</footer>
