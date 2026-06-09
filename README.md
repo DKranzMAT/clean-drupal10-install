@@ -1,4 +1,4 @@
-# America 250 — Drupal 10 × Constitutional Elegance
+# America 250 — Drupal 10 × Constitutional Elegance theme
 
 A lightweight, interview-ready Drupal 10 demo with a custom front-end theme built for the **America 250 semiquincentennial** — celebrating 250 years of American democracy on July 4, 2026.
 
