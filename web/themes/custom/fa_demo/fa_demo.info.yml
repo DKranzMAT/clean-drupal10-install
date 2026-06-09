@@ -1,8 +1,14 @@
-name: 'FA Demo'
+name: America 250
 type: theme
-description: 'Feeding America style demo theme for Drupal Simple.'
-core_version_requirement: ^10
-base theme: olivero
+description: 'America 250 — Constitutional Elegance. A dignified one-page Drupal theme celebrating 250 years of American democracy.'
+package: Custom
+core_version_requirement: ^10 || ^11
+base theme: stable9
 
 libraries:
   - fa_demo/global-styling
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
