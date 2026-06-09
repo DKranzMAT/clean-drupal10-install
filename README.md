@@ -1,11 +1,11 @@
-# America 250 — Drupal 10 × Constitutional Elegance theme
+# America 250 — Drupal 10 × Constitutional Elegance
 
 A lightweight, interview-ready Drupal 10 demo with a custom front-end theme built for the **America 250 semiquincentennial** — celebrating 250 years of American democracy on July 4, 2026.
 
 This project demonstrates how to:
 
 - Set up and configure a full Drupal 10 environment from scratch using Composer, Drush, and local development tools.
-- Build a custom front-end theme (`fa_demo`) with `.info.yml`, `.libraries.yml`, `html.html.twig`, and `page.html.twig`.
+- Build a custom front-end theme with `.info.yml`, `.libraries.yml`, `html.html.twig`, and `page.html.twig`.
 - Integrate modern design tokens and CSS variables (`--a250-navy`, `--a250-gold`, `--a250-red`, etc.).
 - Replace the default Olivero layout with a fully custom one-page experience.
 
@@ -19,7 +19,7 @@ This project demonstrates how to:
 
 ## What's Included
 
-### Custom theme: `fa_demo`
+### Custom theme: `america_250`
 
 Location: `web/themes/custom/fa_demo/`
 
@@ -61,8 +61,9 @@ Key files:
           'driver'   => 'mysql',
         ];
 
-4. Rebuild caches:
+4. Install stable9 base theme and rebuild caches:
 
+        DRUSH_NO_MIN_PHP=1 ./vendor/bin/drush theme:enable stable9
         DRUSH_NO_MIN_PHP=1 ./vendor/bin/drush cr
 
 5. Enable and set the theme as default:
@@ -90,6 +91,7 @@ Key files:
 
 - Easily extendable: add blocks, views, or content types as needed.
 - Drush requires `DRUSH_NO_MIN_PHP=1` prefix when running on MAMP PHP 8.2/8.3.
+- Base theme `stable9` must be enabled before activating this theme.
 
 ---
 
